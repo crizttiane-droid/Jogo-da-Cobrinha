@@ -1,0 +1,5 @@
+{
+  "name": "Jogo da Cobrinha",
+  "description": "Um clássico jogo da Cobrinha com estética retrô, áudio sintetizado e comentários de fim de jogo alimentados por IA usando Gemini 2.5 Flash.",
+  "requestFramePermissions": []
+}

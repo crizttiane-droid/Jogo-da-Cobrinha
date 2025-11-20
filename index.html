@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <!-- Informações Principais -->
+    <title>Jogo da Cobrinha</title>
+    <meta name="description" content="Jogue o clássico Jogo da Cobrinha com visual retrô, rankings e comentários de IA! Tente bater o recorde.">
+    
+    <!-- Favicon (Cobrinha Pixelada) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='%2322c55e' d='M3 5h2v2H3zM5 5h2v2H5zM7 5h2v2H7zM11 5h2v2h-2zM11 7h2v2h-2zM9 7h2v2H9zM3 7h2v2H3zM3 9h2v2H3zM5 9h2v2H5zM7 9h2v2H7zM9 9h2v2H9zM11 9h2v2h-2z'/></svg>">
+    
+    <!-- Configurações PWA / Mobile -->
+    <meta name="theme-color" content="#030712">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Cobrinha">
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://google.com/">
+    <meta property="og:title" content="🐍 Jogo da Cobrinha - Desafio Arcade">
+    <meta property="og:description" content="Você consegue bater meu recorde? Jogue agora a versão com áudio e desafios de IA.">
+    <meta property="og:image" content="https://www.google.com/logos/fnbx/snake_arcade/v3/cta.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="🐍 Jogo da Cobrinha">
+    <meta property="twitter:description" content="Desafie a IA e seus amigos neste clássico Arcade.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom scrollbar for retro feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #111827;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #22c55e;
+        border-radius: 4px;
+      }
+      /* Prevent touch behaviors on mobile */
+      body {
+        overscroll-behavior: none;
+        touch-action: none;
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-950 text-white font-mono overflow-hidden h-screen w-screen">
+    <div id="root" class="h-full w-full"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
